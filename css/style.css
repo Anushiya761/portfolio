@@ -1,0 +1,557 @@
+﻿body {
+    scroll-behavior: smooth;
+    margin-top: 70px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Sections */
+.section {
+    padding: 100px 0;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero h3 {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* Glass Card */
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 40px rgba(0, 198, 255, 0.4);
+}
+
+/* Section Title */
+.section-title {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+    color: #00c6ff;
+    letter-spacing: 1px;
+}
+
+/* Buttons */
+.btn-info {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    border: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-info:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section {
+        padding: 70px 0;
+    }
+}
+
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border-radius: 10px;
+    width: 0;
+    transition: width 2s ease;
+}
+.glow-text {
+    font-size: 55px;
+    font-weight: 800;
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: gradientMove 4s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.typing-text {
+    font-size: 26px;
+    font-weight: 500;
+    color: #00c6ff;
+    text-shadow: 0 0 8px #00c6ff;
+}
+
+.typed-cursor {
+    font-size: 28px;
+    color: #00c6ff;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero .container {
+    z-index: 1;
+}
+
+.hero .container {
+    animation: floatUpDown 4s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+:root {
+    --bg-color: #0f2027;
+    --text-color: #ffffff;
+    --card-bg: rgba(255, 255, 255, 0.08);
+    --accent-color: #00c6ff;
+}
+
+/* Light Theme */
+body.light-mode {
+    --bg-color: #f4f6f9;
+    --text-color: #222222;
+    --card-bg: rgba(0, 0, 0, 0.05);
+    --accent-color: #0072ff;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin-top: 70px;
+    background: var(--bg-color);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color);
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Smooth fade animation */
+body {
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Toggle Container */
+.theme-toggle {
+    position: relative;
+}
+
+/* Hide checkbox */
+.theme-toggle input {
+    display: none;
+}
+
+/* Toggle Background */
+.toggle-label {
+    width: 55px;
+    height: 28px;
+    background: #00c6ff;
+    display: block;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+/* Toggle Ball */
+.toggle-ball {
+    width: 22px;
+    height: 22px;
+    background: #0072ff;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    border-radius: 50%;
+    transition: transform 0.4s ease;
+}
+
+/* When checked (Light Mode) */
+#themeSwitch:checked + .toggle-label {
+    background: #00c6ff;
+}
+
+#themeSwitch:checked + .toggle-label .toggle-ball {
+    transform: translateX(26px);
+}
+
+/* Contact Card */
+.contact-card {
+    padding: 40px;
+}
+
+/* Floating Input */
+.floating-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.floating-group input,
+.floating-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 8px;
+    color: var(--text-color);
+    outline: none;
+    transition: 0.3s;
+}
+
+.floating-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+/* Move label on focus */
+.floating-group input:focus,
+.floating-group textarea:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.floating-group input:focus + label,
+.floating-group input:valid + label,
+.floating-group textarea:focus + label,
+.floating-group textarea:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background: var(--bg-color);
+    padding: 0 5px;
+    color: var(--accent-color);
+}
+
+/* Premium Button */
+.premium-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.premium-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+/* Floating Social Sidebar */
+.social-sidebar {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 0 10px 10px 0;
+    transition: all 0.3s ease;
+}
+
+/* Individual Colors */
+.linkedin {
+    background: #0077b5;
+}
+
+.github {
+    background: #333;
+}
+
+.email {
+    background: #d44638;
+}
+
+/* Hover Animation */
+.social-link:hover {
+    width: 65px;
+    transform: translateX(10px);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+
+/* Skill Card */
+.skill-card h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+/* Skill Tags */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tags span {
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.skill-tags span:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.skill-item i {
+    font-size: 22px;
+}
+
+.skill-item:hover {
+    transform: translateX(6px);
+    color: var(--accent-color);
+}
+
+/* ===== Modern Experience Timeline ===== */
+
+.modern-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto;
+    padding-left: 40px;
+}
+
+/* Vertical glowing line */
+.modern-timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #00c6ff, #0072ff);
+}
+
+/* Timeline Item */
+.modern-item {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+/* Dot */
+.modern-item::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    background: #00c6ff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+/* Card */
+.modern-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.modern-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px rgba(0,198,255,0.4);
+}
+
+/* Header */
+.modern-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+/* Logo */
+.company-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background: white;
+    padding: 5px;
+}
+
+.intern-card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px;
+    color: #000;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    height: 100%;
+}
+
+.intern-card:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+}
+
+.intern-card h5 {
+    font-weight: 600;
+}
+
+.intern-card .company {
+    font-weight: 500;
+    color: #0072ff;
+}
+
+/* Hover text color fix */
+.intern-card:hover .company {
+    color: #fff;
+}
+
+.intern-card ul {
+    padding-left: 18px;
+}
+
+.intern-card ul li {
+    margin-bottom: 8px;
+}
+
+.custom-list {
+    list-style: none !important; /* force remove dot */
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.custom-list li {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    margin-bottom: 10px !important;
+    text-align: center !important;
+    list-style: none !important; /* extra safety */
+}
+
+/* Tick icon */
+.custom-list li::before {
+    content: "✔" !important ;
+    color: #00c6ff !important;
+    font-weight: bold !important;
+    font-size: 14px !important;
+}
+
+/* Hover animation */
+.intern-card:hover .custom-list li {
+    transform: translateX(5px);
+    transition: 0.3s;
+}
