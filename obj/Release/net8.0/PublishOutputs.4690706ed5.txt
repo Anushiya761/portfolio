@@ -1,0 +1,7 @@
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\AnushiyaPortfolio.exe
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\appsettings.json
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\AnushiyaPortfolio.dll
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\AnushiyaPortfolio.deps.json
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\AnushiyaPortfolio.runtimeconfig.json
+D:\Anushiyadevi\Other Projects\AnushiyaPortfolio\obj\Release\net8.0\PubTmp\Out\AnushiyaPortfolio.pdb
